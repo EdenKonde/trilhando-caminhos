@@ -16,6 +16,7 @@ Tecnologias usadas
  ### Funcionalidades da api
   - [x] Listar todas as trilhas
   - [ ] Listar trilhhas espefíficas
+  // foco
 
 
 

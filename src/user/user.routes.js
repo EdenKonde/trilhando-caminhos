@@ -1,6 +1,11 @@
 const express = require('express')
 const routers = express.Router()
 
+const swaggerUi = require('swagger-ui-express')
+const swaggerDocument = require('./../../swagger.json')
+routers.use('/api-docs', swaggerUi.serve)
+routers.get('/api-docs', swaggerUi.setup(swaggerDocument))
+
 const userMiddleware    = require('./user.middlewares')
 const controllersUser   = require('./user.controllers')
 const controllersTrilhas = require('../trilhas/trilhas.controllers')
